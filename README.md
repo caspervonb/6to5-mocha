@@ -5,17 +5,11 @@
 ```json
 {
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --compilers js:6to5/register"
   },
   "dependencies": {
     "6to5": "*",
     "mocha": "*"
   }
 }
-```
-
-**test/mocha.opts**
-
-```
---require 6to5/register
 ```
